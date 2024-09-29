@@ -1,8 +1,8 @@
 import React from 'react';
-import CVForm from './component/cvForm';
+import CVForm from './component/FormCV/cvForm';
 import './stayle/app.scss';
 import ThemeToggle from './temes/temestogle'
-
+import PdfGenerator from './component/PDFrecord/pdf'
 
 
 const App: React.FC = () => {
@@ -12,6 +12,7 @@ const App: React.FC = () => {
     <div className="App">
       <CVForm />
 			<ThemeToggle/>
+			<PdfGenerator/>
     </div>
   );
 }
